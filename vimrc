@@ -11,7 +11,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
-
+Plugin 'junegunn/vim-emoji'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -41,5 +41,9 @@ set showmatch
 colorscheme elflord
 
 "NERDTree
-map <silent> <C-n> :NERDTreeToggle<CR>
+map <silent> <C-n> :NERDTreeFocus<CR>
 
+"Emojis
+set completefunc=emoji#complete
+
+set backspace=indent,eol,start
