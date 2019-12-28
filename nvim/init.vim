@@ -2,8 +2,8 @@
 """ Vim-Plug
 call plug#begin()
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
-Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-fugitive'
+Plug 'dracula/vim', {'as': 'dracula'}
 Plug 'fatih/vim-go', {'do': 'GoUpdateBinaries'}
 call plug#end()
 
@@ -16,9 +16,6 @@ let g:go_info_mode = 'gopls'
 
 """ Coloring
 syntax on
-colorscheme gruvbox
-set background=dark
-
 
 filetype plugin indent on
 set tabstop=4 shiftwidth=4 autoindent
