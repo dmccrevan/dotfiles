@@ -22,7 +22,7 @@
 ## [Termite](https://github.com/thestinger/termite)
 
 #### Font
-- Inconsolata 12
+- Inconsolata 11
 
 
 
