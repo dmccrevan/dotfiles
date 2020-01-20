@@ -1,6 +1,9 @@
 # Disable system bell
 exec --no-startup-id xset b off
 
+# Start networking
+exec --no-startup-id nm-applet
+
 # Set mod key
 set $mod Mod1
 set $wsmod Mod4
@@ -31,24 +34,23 @@ bindsym $mod+q kill
 bindsym $mod+d exec --no-startup-id dmenu_run
 
 # lock
-bindsym $mod+Shift+0 exec --no-startup-id i3lock-fancy
+bindsym $mod+Shift+0 exec --no-startup-id i3lock
 
 # Montiors scripts
 bindsym $mod+Shift+m exec --no-startup-id monitors
 
 # Sound Start up 
-exec --no-startup-id volumeicon
 bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
-exec --no-startup-id pulseaudio
+exec pulseaudio
 
 # Screen brightness controls
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
 bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -c 1 set Speaker 5%+ #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer -c 1 set Speaker 5%- #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id mutecontrol # mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -c 1 set Master 5%+ #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -c 1 set Master 5%- #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id mutecontrol  # mute sound
 
 # Autostart applications
 exec --no-startup-id xautolock -time 10 -locker i3lock
@@ -59,11 +61,11 @@ exec --no-startup-id wicd-gtk
 exec --no-startup-id devmon
 
 # Start Applications
-bindsym $mod+Return exec termite -e /bin/fish
+bindsym $mod+Return exec termite -e /usr/bin/fish 
 bindsym $mod+1 exec firefox
-bindsym $mod+2 exec code-oss
+bindsym $mod+2 exec code
 bindsym $mod+3 exec --no-startup-id termite -e ranger 
-bindsym $mod+4 exec mailspring
+bindsym $mod+4 exec --no-startup-id thunderbird
 bindsym $mod+5 exec --no-startup-id spotify
 bindsym Print exec --no-startup-id i3-scrot
 
