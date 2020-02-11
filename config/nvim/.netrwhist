@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/daniel/.config/fontconfig'
+let g:netrw_dirhist_6='/home/daniel/.config'
+let g:netrw_dirhist_5='/home/daniel'
+let g:netrw_dirhist_4='/home/daniel/Documents/College/Semester7/Research/type-analyzer/micro-cases'
+let g:netrw_dirhist_3='/home/daniel/Documents/College/Semester7/Research/type-analyzer/micro-cases/.pytype'
+let g:netrw_dirhist_2='/home/daniel/Documents/College/Semester7/Research/type-analyzer/micro-cases'
+let g:netrw_dirhist_1='/home/daniel/Documents/College/Semester7/Research/type-analyzer/tools'

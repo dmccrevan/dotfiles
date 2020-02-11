@@ -16,6 +16,7 @@ let g:go_info_mode = 'gopls'
 
 """ Coloring
 syntax on
+""" colorscheme dracula
 
 filetype plugin indent on
 set tabstop=4 shiftwidth=4 autoindent

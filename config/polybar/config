@@ -1,0 +1,29 @@
+;=====================================================
+;     File Includes
+;=====================================================
+
+[section/base]
+include-file = /home/$USER/.config/polybar/master.conf
+include-file = /home/$USER/.config/polybar/modules.conf
+
+;=====================================================
+;     i3 Bars
+;=====================================================
+
+[bar/eDP1]
+inherit = bar/master
+
+monitor = eDP1
+
+modules-left = i3 spotify
+modules-center = date
+modules-right = network pulseaudio battery
+
+[bar/DP2]
+inherit = bar/master
+
+monitor = DP2
+
+modules-left = i3 spotify
+modules-center = date
+modules-right = network pulseaudio battery
