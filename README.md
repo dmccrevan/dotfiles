@@ -1,29 +1,27 @@
 # My personal UNIX toolbox
 
-## [Neovim](https://neovim.io)
+## Applications
 
-#### Plugins used:
-- [nerdtree](https://github.com/scrooloose/nerdtree)
-- [vim-fugitive](https://github.com/tpope/vim-fugitive)
-- [vim-go](https://github.com/fatih/vim-go)
+### [Neovim](https://neovim.io)
 
-#### Theme
-- [gruvbox](https://github.com/morhetz/gruvbox)
+### [i3-gaps](https://github.com/Airblader/i3)
 
+### [Fish-shell](https://fishshell.com)
 
+### [Termite](https://github.com/thestinger/termite)
 
-## [Fish-shell](https://fishshell.com)
+### [Rofi](https://github.com/davatorium/rofi)
 
-#### Theme
-- [Dracula](https://draculatheme.com/)
+### [dunst](https://github.com/dunst-project/dunst)
 
+### [polybar](https://github.com/polybar/polybar)
 
+## Look and Feel
 
-## [Termite](https://github.com/thestinger/termite)
+### Theme: [Dracula](https://draculatheme.com/)
 
-#### Font
+### Fonts
 - Inconsolata 11
-
-
-
+- FontAwesome
+- NerdFonts
 
