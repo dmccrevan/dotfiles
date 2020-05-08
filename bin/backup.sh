@@ -1,5 +1,6 @@
 #!/bin/bash
 BACKUP="/run/media/daniel/BACKUP/"
+~/.bin/mount-eHDD.sh
 
 if [ -d $BACKUP ]; then
     rsync -ravz --partial /home/daniel/Documents $BACKUP
